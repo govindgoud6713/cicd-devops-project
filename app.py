@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.get("/")
 def home():
     return jsonify(
-        message="My first automatic CI/CD deployment is successful!",
+        message="My first Kubernetes rolling update is successful!",
         status="running"
     )
 
