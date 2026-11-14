@@ -1,3 +1,4 @@
+
 from flask import Flask, jsonify
 
 app = Flask(__name__)
@@ -5,7 +6,7 @@ app = Flask(__name__)
 @app.get("/")
 def home():
     return jsonify(
-        message="Hello from my first DevOps CI/CD project!",
+        message="My first automatic CI/CD deployment is successful!",
         status="running"
     )
 
